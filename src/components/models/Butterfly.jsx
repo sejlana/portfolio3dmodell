@@ -21,14 +21,14 @@ export default function ButterflyModel(props) {
   return (
     <group ref={group} {...props} dispose={null}
     ref={modelRef}
-    position={[0, 0, 0]}
-      scale={[15, 15, 15]}
-      rotation={[0.25, 1, 0]}>
+    position={[0.2, 0, 0]}
+      scale={[20, 20, 20]}
+      rotation={[-0.35, 1, 0.5]}>
       <group>
         <group name="skeletal3" scale={0.01}>
           <primitive object={nodes.root_jnt4} />
         </group>
-        <skinnedMesh name="butterfly2" geometry={nodes.butterfly2.geometry} material={nodes.butterfly2.material} skeleton={nodes.butterfly2.skeleton} scale={0.01} />
+        <skinnedMesh name="butterfly2" geometry={nodes.butterfly2.geometry} material={nodes.butterfly2.material} skeleton={nodes.butterfly2.skeleton} scale={0.01} material-color="pink" />
       </group>
     </group>
   )
