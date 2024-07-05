@@ -1,29 +1,24 @@
-"use client"
+'use client'
 
-const { useState, useEffect } = require("react")
+const { useState, useEffect } = require('react')
 
 const useScreenSize = () => {
+  const [screenSize, setScreenSize] = useState(window.innerWidth)
 
-const [screenSize, setScreenSize] = useState()
-
-useEffect(() => {
+  useEffect(() => {
     function handleResize() {
-        return window.innerWidth
-    }
-
-    function handleResize(){
-        setScreenSize(getScreenSize())
+      setScreenSize(window.innerWidth)
     }
 
     handleResize()
     window.addEventListener('resize', handleResize)
 
     return () => {
-        window.removeEventListener('resize', handleResize)
+      window.removeEventListener('resize', handleResize)
     }
-}, [])
+  }, [])
 
-    return screenSize
-
-
+  return screenSize
 }
+
+export default useScreenSize

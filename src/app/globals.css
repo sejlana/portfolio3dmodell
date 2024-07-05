@@ -2,27 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-:root  {
+@layer base {
+  :root {
     --background: 27 27 27;
     --foreground: 225 225 225;
     --muted: 115 115 115;
-    --accent: 254 254 91; 
+    --accent: 254 110 91;
   }
 }
 
 @layer utilities {
-  .pause{
+  .pause {
     animation-play-state: paused;
   }
 
-  .custom-bg{
+  .custom-bg {
     @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px]
-    shadow-glass-big hover:shadow-glass-small
+    shadow-glass-big hover:shadow-glass-small;
   }
 }
 
 @keyframes move {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }

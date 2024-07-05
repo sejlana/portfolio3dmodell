@@ -1,4 +1,4 @@
-import ProjectLayout from "./ProjectLayout";
+import ProjectLayout from './ProjectLayout'
 
 const ProjectList = ({ projects }) => {
   return (
@@ -7,7 +7,7 @@ const ProjectList = ({ projects }) => {
         <ProjectLayout key={index} {...project} />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default ProjectList;
+export default ProjectList
