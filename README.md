@@ -12,7 +12,9 @@ Register to https://www.emailjs.com/
 Create .env.local file, paste your ID's and Keys
 
 NEXT_PUBLIC_SERVICE_ID=""
+
 NEXT_PUBLIC_TEMPLATE_ID=""
+
 NEXT_PUBLIC_PUBLIC_KEY=""
 
 Install the dependencies and run the development server:
