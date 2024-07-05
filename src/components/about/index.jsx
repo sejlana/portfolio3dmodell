@@ -61,14 +61,14 @@ const AboutDetails = () => {
           />
         </AboutLayout>
 
-        <AboutLayout className='col-span-full '>
+        {/* <AboutLayout className='col-span-full '>
           <img
             className='w-full h-full text-sm'
             src='https://skillicons.dev/icons?i=js,html,css,react,vite,'
             alt='sejlana'
             loading='lazy'
           />
-        </AboutLayout>
+        </AboutLayout> */}
       </div>
     </section>
   )
