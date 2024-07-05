@@ -77,7 +77,7 @@ const NavButton = ({
               group-hover:pause hover:text-accent'>
                 {getIcon(icon)}
                 <span className='peer bg-transparent absolute top-0 left-0 w-full h-full' />
-                <span>{label}</span>
+                {label}
               </span>
             </NavLink>
           </div>
