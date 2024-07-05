@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         {children}
         <ShinyBackground />
         <footer className='text-accent'>
-          'Animated Flying Fluttering Butterfly Loop' (https://skfb.ly/o9Bsw) by
+          &apos;Animated Flying Fluttering Butterfly Loop&apos; (https://skfb.ly/o9Bsw) by
           LasquetiSpice is licensed under Creative Commons Attribution
           (http://creativecommons.org/licenses/by/4.0/).
         </footer>
